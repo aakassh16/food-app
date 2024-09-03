@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfood_app=self.webpackChunkfood_app||[]).push([[226],{226:(e,p,r)=>{r.r(p),r.d(p,{default:()=>t});var n=r(579);const t=()=>(0,n.jsx)("h1",{style:{textAlign:"center",marginTop:"100px"},children:"Our Grocery Online Store. web page"})}}]);
+//# sourceMappingURL=226.255d1fa1.chunk.js.map
