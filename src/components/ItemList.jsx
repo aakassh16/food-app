@@ -20,7 +20,7 @@ const ItemList = ({ items = [] }) => {
                                 </h3>
                             </div>
                             <p className="text-xs">{item.card.info.description}</p>
-                            <h3 className="pt-3 font-semibold">⭐{item.card.info.ratings.aggregatedRating.rating}({item.card.info.ratings.aggregatedRating.ratingCountV2})</h3>
+                            <h3 className="pt-3 font-semibold">⭐{item.card.info.ratings.aggregatedRating.rating} ({item.card.info.ratings.aggregatedRating.ratingCountV2})</h3>
                         </div>
                         <div className="w-3/12 p-4">
                             <div className="absolute">
