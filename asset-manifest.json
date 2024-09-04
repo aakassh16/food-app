@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/github.io/food-app/static/css/main.7568d37c.css",
-    "main.js": "/github.io/food-app/static/js/main.12abd5e7.js",
-    "static/js/226.255d1fa1.chunk.js": "/github.io/food-app/static/js/226.255d1fa1.chunk.js",
-    "index.html": "/github.io/food-app/index.html",
-    "main.7568d37c.css.map": "/github.io/food-app/static/css/main.7568d37c.css.map",
-    "main.12abd5e7.js.map": "/github.io/food-app/static/js/main.12abd5e7.js.map",
-    "226.255d1fa1.chunk.js.map": "/github.io/food-app/static/js/226.255d1fa1.chunk.js.map"
+    "main.css": "/food-app/static/css/main.7568d37c.css",
+    "main.js": "/food-app/static/js/main.d2ffbbd3.js",
+    "static/js/226.255d1fa1.chunk.js": "/food-app/static/js/226.255d1fa1.chunk.js",
+    "index.html": "/food-app/index.html",
+    "main.7568d37c.css.map": "/food-app/static/css/main.7568d37c.css.map",
+    "main.d2ffbbd3.js.map": "/food-app/static/js/main.d2ffbbd3.js.map",
+    "226.255d1fa1.chunk.js.map": "/food-app/static/js/226.255d1fa1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7568d37c.css",
-    "static/js/main.12abd5e7.js"
+    "static/js/main.d2ffbbd3.js"
   ]
 }
