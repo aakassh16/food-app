@@ -32,7 +32,7 @@ const RestaurantMenu = () => {
       
 
   //console.log(itemCards);
-  console.log(categories);
+  // console.log(categories);
 
   return (
     <div className="text-center">

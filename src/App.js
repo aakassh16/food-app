@@ -25,7 +25,7 @@ export const appRouter = createBrowserRouter([
     element: <AppLayout />,
     children: [
       {
-        path: "/",
+        path: "/food-app",
         element: <Body />
       },
       {
