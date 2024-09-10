@@ -15,7 +15,8 @@ const ItemList = ({ items = [] }) => {
                                 <span className="font-bold">{item.card.info.name}</span>
                                 {" "}
                                 <h3 className="font-bold">
-                                    ₹{item.card.info.price? item.card.info.price / 100
+                                    ₹{item.card.info.price ? 
+                                        item.card.info.price / 100
                                         : item.card.info.defaultPrice / 100}
                                 </h3>
                             </div>
@@ -37,7 +38,7 @@ const ItemList = ({ items = [] }) => {
                     </div>
                 ))
             ) : (
-                <h3>No itwm</h3>
+                <h3>No item</h3>
             )}
         </div>
     );

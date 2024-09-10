@@ -21,14 +21,10 @@ const Body = () => {
       const data = await fetch(MENU_API);
       const json = await data.json();
 
-      setlistOfRestaurant(
-        json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
-          ?.restaurants
-      );
-      setFilteredRestaurant(
-        json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
-          ?.restaurants
-      );
+      const restaurants = json?.data?.cards?.[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants ||  [];
+      
+      setlistOfRestaurant(restaurants);
+      setFilteredRestaurant(restaurants);
     } catch (error) {
       console.error("Failed to fetch data", error);
     }
@@ -45,7 +41,7 @@ const Body = () => {
         <div className="m-4 p-4">
           <input
             type="text"
-            className="earchBox border border-solid border-black"
+            className="border rounded-sm border-solid border-black"
             placeholder="searching"
             value={searchText}
             onChange={(e) => {
@@ -85,7 +81,7 @@ const Body = () => {
         {filteredRestaurant.map((restaurant) => (
           <Link
             key={restaurant.info.id}
-            to={"/restaurants/" + restaurant.info.id}
+            to={"/food-app/restaurants/" + restaurant.info.id}
           >
            { restaurant.info.isOpen ? <RestaurantCardPromoted resData={restaurant}/>:
             <RestaurantCard resData={restaurant} />}

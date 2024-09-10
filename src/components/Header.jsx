@@ -1,14 +1,17 @@
-import React from "react";
+import { React, useContext } from "react";
 import { LOGO_URL } from "../utils/constant";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStaus from "../utils/useOnlineStaus";
+import UserContext from "../utils/UserContext";
 
 const Header = () => {
 
   const [btnName, setbtnName] = useState("Login");
   const onlineStatus = useOnlineStaus();
 
+  const {loggedInUser} = useContext(UserContext);
+  console.log(loggedInUser);
 
   return (
     <div className="flex justify-between bg-pink-200 sm:bg-yellow-200 lg:bg-green-200 font-[500]">
@@ -21,16 +24,16 @@ const Header = () => {
             Online Status: {onlineStatus ? "✅" : "🔴"}
           </li>
           <li className="px-4">
-            <Link to="/">Home</Link>
+            <Link to="/food-app">Home</Link>
           </li>
           <li className="px-4">
-            <Link to="/about">About Us</Link>
+            <Link to="/food-app/about">About Us</Link>
           </li>
           <li className="px-4">
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/food-app/contact">Contact Us</Link>
           </li>
           <li className="px-4">
-            <Link to="/grocery">Grocery</Link>
+            <Link to="/food-app/grocery">Grocery</Link>
           </li>
           <li className="px-4">Cart</li>
           <button className="login"
@@ -39,6 +42,9 @@ const Header = () => {
                 setbtnName("Logout") :
                 setbtnName("Login")
             }}>{btnName}</button>
+             <li className="px-4 font-bold">
+            <Link className="links">{loggedInUser}</Link>
+          </li>
         </ul>
       </div>
     </div>
