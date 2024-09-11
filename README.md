@@ -13,6 +13,4 @@ https://aakassh16.github.io/food-app/
     - dispatch(acrton)
     - Selector
 
-    onClick={handleAddItem}
-                                onClick={() => handleAddItem(item)}
-                                onClick={handleAddItem(item)}
+"watch-test" : "jest --watch"
